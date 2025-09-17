@@ -14,140 +14,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Feather Icons -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <style>
-        :root {
-            --primary-color: #5E4C3E;
-            --secondary-color: #8C7A6B;
-            --accent-color: #A67F5C;
-            --light-color: #E6DED2;
-            --dark-color: #2D2A26;
-            --background-color: #FAF7F2;
-            --text-color: #333333;
-        }
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-family: 'Cormorant Garamond', 'Georgia', serif !important;
-        }
-       
-        .header-image {
-            background-size: cover;
-            background-position: center;
-            height: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .header-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #e6ded2;
-        }
-        .header-text {
-            position: relative;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .page-header {
-            background-size: cover;
-            background-position: center;
-            height: 10vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            margin-bottom: 1rem;
-            margin-top: 1rem;
-            background-color: #e6ded2;
-        }
- 
-      
-        .nav-link {
-    color: var(--primary-color);
-    transition: all 0.3s ease;
-    background-color: #FAF7F2;
-    font-family: 'Montserrat', 'Georgia', serif; 
-    font-size: 1.1rem;
-    font-weight: 200;
-     padding-top: 0.6rem;
     
-   
-        
-          /* Använd Montserrat för nav-länkar */
-}
-  
-        .nav-link:hover {
-            color: var(--accent-color);
-        }
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: var(--accent-color);
-        }
-        .form-input {
-            border: 1px solid var(--secondary-color);
-            padding: 0.75rem;
-            border-radius: 0.25rem;
-            width: 100%;
-            margin-bottom: 1rem;
-            font-family: 'Montserrat', 'Georgia', serif !important;
-        }
-        .form-input:focus {
-            outline: none;
-            border-color: var(--accent-color);
-        }
-        .checkbox-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        .checkbox-container input {
-            margin-right: 0.5rem;
-        }
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-        .contact-info-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .contact-icon {
-            color: var(--accent-color);
-            margin-right: 1rem;
-        }
-        #submitBtn:disabled {
-            background-color: #cccccc;
-            cursor: not-allowed;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header with Image -->
     <div class="header-image">
         <div class="header-text">
-            <img src="https://erikjarl.github.io/malmpsykolog/bildmapp/omlogga.png">
+            <img src="https://erikjarl.github.io/malmpsykolog/bildmapp/omlogga.png" alt="Olle Malm logga">
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-[#FAF7F2]" style="background-color: var(--background-color); margin-top:0.9rem">
+    <nav>
         <div class="container mx-auto px-4">
             <div class="flex justify-center space-x-6 md:space-x-12">
                 <a href="index.html" class="nav-link font-medium">Hem</a>
@@ -158,22 +37,7 @@
         </div>
     </nav>
 
-    <!-- Page Header REMOVED!-->
-
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-        <div class="max-w-4xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="contact-info-card">
-                    <h2 class="text-2xl font-bold mb-6" style="color: var(--primary-color);">Kontaktinformation</h2>
-                    <div class="flex items-start mb-4">
-                        <i data-feather="map-pin" class="contact-icon"></i>
-                        <div>
-                            <h3 class="font-bold">Adress</h3>
-                            <p>Psykologkliniken</p>
-                            <p>Storgatan 12</p>
-                            <p>114 55 Stockholm</p>
-                        </div>
+    
                     </div>
                     <div class="flex items-start mb-4">
                         <i data-feather="phone" class="contact-icon"></i>
