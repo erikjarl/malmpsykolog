@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - Olle Malm</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Feather Icons -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
     <style>
         :root {
             --primary-color: #5E4C3E;
@@ -22,13 +27,13 @@
         body {
             background-color: var(--background-color);
             color: var(--text-color);
-            font-family: 'Georgia', serif;
+            font-family: 'Cormorant Garamond', 'Georgia', serif !important;
         }
+       
         .header-image {
-            background-image: url('https://cdn.pixabay.com/photo/2016/11/22/19/33/sea-1850228_1280.jpg');
             background-size: cover;
             background-position: center;
-            height: 400px;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -41,7 +46,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: #e6ded2;
         }
         .header-text {
             position: relative;
@@ -52,35 +57,33 @@
             margin: 0 auto;
         }
         .page-header {
-            background-image: url('https://cdn.pixabay.com/photo/2017/11/04/21/09/textile-2918844_1280.jpg');
             background-size: cover;
             background-position: center;
-            height: 200px;
+            height: 10vh;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            background-color: #e6ded2;
         }
-        .page-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-        .page-header-text {
-            position: relative;
-            color: white;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
+ 
+      
         .nav-link {
-            color: var(--primary-color);
-            transition: all 0.3s ease;
-        }
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    background-color: #FAF7F2;
+    font-family: 'Montserrat', 'Georgia', serif; 
+    font-size: 1.1rem;
+    font-weight: 200;
+     padding-top: 0.6rem;
+    
+   
+        
+          /* Använd Montserrat för nav-länkar */
+}
+  
         .nav-link:hover {
             color: var(--accent-color);
         }
@@ -98,6 +101,7 @@
             border-radius: 0.25rem;
             width: 100%;
             margin-bottom: 1rem;
+            font-family: 'Montserrat', 'Georgia', serif !important;
         }
         .form-input:focus {
             outline: none;
@@ -121,7 +125,7 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 2rem;
+            padding: 1.5rem;
             margin-bottom: 2rem;
         }
         .contact-icon {
@@ -138,13 +142,12 @@
     <!-- Header with Image -->
     <div class="header-image">
         <div class="header-text">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Olle Malm</h1>
-            <p class="text-2xl md:text-3xl">leg. psykolog & psykoanalytiker</p>
+            <img src="https://erikjarl.github.io/malmpsykolog/bildmapp/omlogga.png">
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md py-4">
+    <nav class="bg-[#FAF7F2]" style="background-color: var(--background-color); margin-top:0.9rem">
         <div class="container mx-auto px-4">
             <div class="flex justify-center space-x-6 md:space-x-12">
                 <a href="index.html" class="nav-link font-medium">Hem</a>
@@ -155,10 +158,7 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <div class="page-header">
-        <h1 class="page-header-text">Kontakt</h1>
-    </div>
+    <!-- Page Header REMOVED!-->
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-8">
@@ -166,7 +166,6 @@
             <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <div class="contact-info-card">
                     <h2 class="text-2xl font-bold mb-6" style="color: var(--primary-color);">Kontaktinformation</h2>
-                    
                     <div class="flex items-start mb-4">
                         <i data-feather="map-pin" class="contact-icon"></i>
                         <div>
@@ -176,7 +175,6 @@
                             <p>114 55 Stockholm</p>
                         </div>
                     </div>
-                    
                     <div class="flex items-start mb-4">
                         <i data-feather="phone" class="contact-icon"></i>
                         <div>
@@ -185,7 +183,6 @@
                             <p class="text-sm text-gray-600">Mån-fre 09:00-17:00</p>
                         </div>
                     </div>
-                    
                     <div class="flex items-start mb-4">
                         <i data-feather="mail" class="contact-icon"></i>
                         <div>
@@ -193,7 +190,6 @@
                             <p>olle.malm@psykologkliniken.se</p>
                         </div>
                     </div>
-                    
                     <div class="flex items-start">
                         <i data-feather="clock" class="contact-icon"></i>
                         <div>
@@ -203,7 +199,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="contact-info-card">
                     <h2 class="text-2xl font-bold mb-6" style="color: var(--primary-color);">Kontaktformulär</h2>
                     <form action="https://formspree.io/f/xjkezlwv" method="POST" id="contactForm">
@@ -211,39 +206,26 @@
                             <label for="name" class="block mb-1">Namn</label>
                             <input type="text" id="name" name="name" class="form-input" required>
                         </div>
-                        
                         <div>
                             <label for="email" class="block mb-1">E-post</label>
                             <input type="email" id="email" name="email" class="form-input" required>
                         </div>
-                        
                         <div>
                             <label for="phone" class="block mb-1">Telefonnummer</label>
                             <input type="tel" id="phone" name="phone" class="form-input">
                         </div>
-                        
-                       <!--
-                        <div>
-                            <label for="message" class="block mb-1">Meddelande</label>
-                            <textarea id="message" name="message" rows="4" class="form-input" required></textarea>
-                        </div>
-
-                        -->
-
                         <div class="checkbox-container">
                             <input type="checkbox" id="consent" name="consent" required>
                             <label for="consent">Jag godkänner att mina uppgifter lagras enligt GDPR</label>
                         </div>
-                        
                         <button type="submit" id="submitBtn" class="btn-primary py-2 px-6 rounded disabled:opacity-50" disabled>Skicka</button>
                     </form>
                 </div>
             </div>
-            
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-2xl font-bold mb-4" style="color: var(--primary-color);">Hitta hit</h2>
                 <div class="aspect-w-16 aspect-h-9">
-                    <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8143.549426503965!2d18.043834872704938!3d59.31813789585357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e44abdd9a3%3A0x3fafad3eac89814b!2sMariatorget%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1757778120132!5m2!1ssv!2sse" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8143.549426503965!2d18.043834872704938!3d59.31813789585357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e44abdd9a3%3A0x3fafad3eac89814b!2sMariatorget%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1757778120132!5m2!1ssv!2sse" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
@@ -281,6 +263,46 @@
                 alert('Du måste godkänna att dina uppgifter lagras för att kunna skicka formuläret.');
             }
         });
+
+        // Utökat felsökningsskript för att kontrollera fonttillämpning
+        window.onload = function() {
+            // Testa fonten på body
+            const bodyFont = window.getComputedStyle(document.body).fontFamily;
+            console.log('Body font:', bodyFont);
+
+            // Testa fonten på ett specifikt element (t.ex. en rubrik)
+            const heading = document.querySelector('h2');
+            if (heading) {
+                const headingFont = window.getComputedStyle(heading).fontFamily;
+                console.log('Heading font:', headingFont);
+            }
+
+            // Testa fonten på formulärinput
+            const input = document.querySelector('.form-input');
+            if (input) {
+                const inputFont = window.getComputedStyle(input).fontFamily;
+                console.log('Input font:', inputFont);
+            }
+
+            // Kontrollera om Montserrat laddas
+            const testElement = document.createElement('div');
+            testElement.style.fontFamily = "'Montserrat', 'Georgia', serif";
+            testElement.style.position = 'absolute';
+            testElement.style.visibility = 'hidden';
+            testElement.innerText = 'Test';
+            document.body.appendChild(testElement);
+            const computedFont = window.getComputedStyle(testElement).fontFamily;
+            console.log('Test element font:', computedFont);
+            document.body.removeChild(testElement);
+
+            // Kontrollera om fontfilen laddas
+            const fontLink = document.querySelector('link[href*="Montserrat"]');
+            if (fontLink) {
+                console.log('Google Fonts link found:', fontLink.href);
+            } else {
+                console.error('Google Fonts link not found!');
+            }
+        };
     </script>
 </body>
 </html>
