@@ -18,39 +18,34 @@ body {
     padding: 0;
 }
 
+.text-primary {
+    color: var(--primary-color);
+}
+
 /* ===== Header ===== */
 .header-image {
-    background-size: cover;
-    background-position: center;
-    height: auto;
+    background-color: #e6ded2;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-}
-.header-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #e6ded2;
+    padding: 1.5rem 0;
 }
 .header-text {
     position: relative;
-    color: white;
     text-align: center;
-    padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
 /* ===== Navigation ===== */
+nav {
+    background-color: var(--background-color);
+    margin-top: 0.9rem;
+}
 .nav-link {
     color: var(--primary-color);
     transition: all 0.3s ease;
-    background-color: #FAF7F2;
     font-family: 'Montserrat', 'Georgia', serif;
     font-size: 1.1rem;
     font-weight: 200;
