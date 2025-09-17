@@ -9,127 +9,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <style>
-        :root {
-            --primary-color: #5E4C3E;
-            --secondary-color: #8C7A6B;
-            --accent-color: #A67F5C;
-            --light-color: #E6DED2;
-            --dark-color: #2D2A26;
-            --background-color: #FAF7F2;
-            --text-color: #333333;
-        }
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-family: 'Georgia', serif;
-        }
-        .header-image {
-            background-image: url('https://cdn.pixabay.com/photo/2016/11/22/19/33/sea-1850228_1280.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .header-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-        .header-text {
-            position: relative;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .page-header {
-            background-image: url('http://static.photos/office/1200x300/2');
-            background-size: cover;
-            background-position: center;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            margin-bottom: 3rem;
-        }
-        .page-header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-        .page-header-text {
-            position: relative;
-            color: white;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .nav-link {
-            color: var(--primary-color);
-            transition: all 0.3s ease;
-        }
-        .nav-link:hover {
-            color: var(--accent-color);
-        }
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-            transition: all 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: var(--accent-color);
-        }
-        .form-input {
-            border: 1px solid var(--secondary-color);
-            padding: 0.75rem;
-            border-radius: 0.25rem;
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-        .form-input:focus {
-            outline: none;
-            border-color: var(--accent-color);
-        }
-        .checkbox-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
-        .checkbox-container input {
-            margin-right: 0.5rem;
-        }
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header with Image -->
     <div class="header-image">
         <div class="header-text">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Olle Malm</h1>
-            <p class="text-2xl md:text-3xl">leg. psykolog & psykoanalytiker</p>
+            <img src="https://erikjarl.github.io/malmpsykolog/bildmapp/omlogga.png" alt="Olle Malm logga">
         </div>
     </div>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md py-4">
+    <nav>
         <div class="container mx-auto px-4">
             <div class="flex justify-center space-x-6 md:space-x-12">
                 <a href="index.html" class="nav-link font-medium">Hem</a>
